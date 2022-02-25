@@ -7,6 +7,11 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+
     font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
 
@@ -15,17 +20,15 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-color: hsl(225, 100%, 94%);
-    position: relative;
-
 
 }
 
-.card {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.container{
+    display: flex;
+    justify-content: center;
+}
 
+.card {
     max-width: 450px;
     border-radius: 20px;
     overflow: hidden;
@@ -84,7 +87,7 @@ body {
     color: hsl(223, 47%, 23%);
 }
 
-.plan-box__description div h4 {
+.plan-box__description div h2 {
     font-size: 16px;
     font-weight: 900;
     color: hsl(223, 47%, 23%);
@@ -164,7 +167,7 @@ a.cancel-btn:hover{
         margin-left: 10px;
     }
 
-    a.proceed-btn, a.cancel-btn, a.plan-box__change, div.plan-box p, div.plan-box h4{
+    a.proceed-btn, a.cancel-btn, a.plan-box__change, div.plan-box p, div.plan-box h2{
         font-size: 13px;
     }
 
